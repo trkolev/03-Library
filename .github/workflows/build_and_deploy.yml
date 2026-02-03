@@ -20,8 +20,8 @@ jobs:
         cache: 'npm'
     - name: Checkout repository
       run: npm install
-    - name: Starting FE &
-      run: npm run start
+    - name: Starting FE
+      run: npm run start &
     - name: Starting BE
       run: npm run server &
     - name: Starting tests  
