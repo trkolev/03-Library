@@ -24,5 +24,7 @@ jobs:
       run: npm run start &
     - name: Starting BE
       run: npm run server &
+    - name: Playwright install
+      run: npx playwright install 
     - name: Starting tests  
       run: npm test
